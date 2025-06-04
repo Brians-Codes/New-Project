@@ -7,7 +7,8 @@
 }
 body {
   font-family: 'Inter', sans-serif;
-  color: #333;
+  background: #121212;
+  color: #eee;
 }
 .navbar {
   display: flex;
@@ -17,7 +18,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(10px);
   z-index: 1000;
 }
@@ -32,15 +33,15 @@ body {
 }
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: #eee;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 .nav-links a:hover {
-  color: #007bff;
+  color: #ff9800;
 }
 .nav-links a.active {
-  color: #007bff;
+  color: #ff9800;
 }
 .parallax {
   background-attachment: fixed;
@@ -80,15 +81,16 @@ h1, h2 {
   margin-top: 2rem;
 }
 .game-card {
-  background: #f9f9f9;
+  background: #1e1e1e;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #eee;
 }
 .game-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 .game-card img {
   width: 100%;
@@ -98,14 +100,14 @@ h1, h2 {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
-  background: #007bff;
-  color: white;
+  background: #ff9800;
+  color: #000;
   text-decoration: none;
   border-radius: 4px;
   transition: background 0.3s ease;
 }
 .btn:hover {
-  background: #0056b3;
+  background: #e67e00;
 }
 .contact-form {
   display: flex;
@@ -117,17 +119,20 @@ h1, h2 {
 .contact-form input,
 .contact-form textarea {
   padding: 0.75rem;
-  border: 1px solid #ccc;
+  border: 1px solid #444;
   border-radius: 4px;
+  background: #1e1e1e;
+  color: #eee;
 }
 footer {
   text-align: center;
   padding: 2rem 0;
-  background: #f3f3f3;
+  background: #1b1b1b;
+  color: #ccc;
   margin-top: 4rem;
 }
 .navbar.scrolled {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 .community-bg {
   background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/1600x900?community');
@@ -149,8 +154,8 @@ footer {
   position: fixed;
   right: 1rem;
   bottom: 1rem;
-  background: #007bff;
-  color: white;
+  background: #ff9800;
+  color: #000;
   border: none;
   border-radius: 50%;
   width: 3rem;
@@ -179,6 +184,6 @@ footer {
   margin-bottom: 0.5rem;
 }
 .faq-item p {
-  color: #555;
+  color: #ccc;
 }
 
