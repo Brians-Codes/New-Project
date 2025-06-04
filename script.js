@@ -12,4 +12,13 @@ document.addEventListener('DOMContentLoaded', function () {
             navbar.classList.remove('scrolled');
         }
     });
+
+    const parallaxSections = document.querySelectorAll('.parallax');
+    window.addEventListener('scroll', () => {
+        parallaxSections.forEach(section => {
+            const speed = 0.4;
+            const offset = window.pageYOffset * speed;
+            section.style.backgroundPositionY = `${-offset}px`;
+        });
+    });
 });

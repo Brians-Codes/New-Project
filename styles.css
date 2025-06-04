@@ -56,6 +56,9 @@ body {
 .about-bg {
   background-image: url('https://source.unsplash.com/random/1600x900?abstract');
 }
+.features-bg {
+  background-image: url('https://source.unsplash.com/random/1600x900?controller');
+}
 .content {
   max-width: 800px;
   padding: 2rem;
