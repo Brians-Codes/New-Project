@@ -32,4 +32,20 @@ document.addEventListener('DOMContentLoaded', function () {
     toTopBtn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    function activateLink() {
+        const scrollPos = window.scrollY + window.innerHeight / 2;
+        sections.forEach(section => {
+            if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+                navLinks.forEach(link => link.classList.remove('active'));
+                const active = document.querySelector('.nav-links a[href="#' + section.id + '"]');
+                if (active) active.classList.add('active');
+            }
+        });
+    }
+    window.addEventListener('scroll', activateLink);
+    activateLink();
 });

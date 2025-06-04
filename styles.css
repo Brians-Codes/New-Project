@@ -39,6 +39,9 @@ body {
 .nav-links a:hover {
   color: #007bff;
 }
+.nav-links a.active {
+  color: #007bff;
+}
 .parallax {
   background-attachment: fixed;
   background-size: cover;
@@ -51,13 +54,13 @@ body {
   color: white;
 }
 .hero-bg {
-  background-image: url('https://source.unsplash.com/random/1600x900?gaming');
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/1600x900?gaming');
 }
 .about-bg {
-  background-image: url('https://source.unsplash.com/random/1600x900?abstract');
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/1600x900?abstract');
 }
 .features-bg {
-  background-image: url('https://source.unsplash.com/random/1600x900?controller');
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/1600x900?controller');
 }
 .content {
   max-width: 800px;
@@ -127,7 +130,7 @@ footer {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 .community-bg {
-  background-image: url('https://source.unsplash.com/random/1600x900?community');
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/1600x900?community');
 }
 .overlay {
   position: absolute;
@@ -165,3 +168,17 @@ footer {
   opacity: 1;
   pointer-events: auto;
 }
+
+.faq-item {
+  max-width: 600px;
+  margin: 1rem auto;
+  text-align: left;
+}
+.faq-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.faq-item p {
+  color: #555;
+}
+
